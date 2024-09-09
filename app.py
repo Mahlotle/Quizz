@@ -5,6 +5,8 @@ from MCQ import generate_mcq_questions_and_answers_from_pdf
 
 load_dotenv()
 
+headers={ st.secrets["GOOGLE_API_KEY"]}
+
 def main():
     # Set the app title
     st.set_page_config(page_title="MCQ Generator", page_icon="📚", layout="wide")
